@@ -21,6 +21,30 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".DetailsArticleActivity.DetailsArticleActivity"
+            android:label="Nội Dung Chi Tiết" />
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <provider
+            android:name="com.facebook.FacebookContentProvider"
+            android:authorities="com.facebook.app.FacebookContentProvider189701178245225"
+            android:exported="true" />
+
+        <activity
+            android:name=".ReadArticleActivity.ReadArticleActivity"
+            android:label="        Các tin đã đọc gần đây" />
+        <activity
+            android:name=".DetailsArticleActivity.DetailsArticleOfflineActivity"
+            android:label="Nội Dung Chi Tiết"
+            android:parentActivityName=".ReadArticleActivity.ReadArticleActivity" />
     </application>
 
 </manifest>
